@@ -11,6 +11,8 @@ import (
 	"syscall"
 )
 
+// Программа должна корректно завершаться по нажатию Ctrl+C (SIGINT).
+
 func out(ch chan int, i int, ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()
 

@@ -6,6 +6,12 @@ import (
 	"sync"
 )
 
+/*
+Реализовать безопасную для конкуренции запись данных в структуру map.
+
+Используется: sync.Mutex
+*/
+
 type RaceMap struct {
 	mu sync.Mutex
 	m  map[int]string

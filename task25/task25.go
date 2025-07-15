@@ -5,6 +5,14 @@ import (
 	"time"
 )
 
+/*
+	Своя функция Sleep
+
+	Реализовать собственную функцию sleep(duration)
+	аналогично встроенной функции time.Sleep,
+	которая приостанавливает выполнение текущей горутины.
+*/
+
 func main() {
 	fmt.Printf("start: %v\n", time.Now())
 	sleep(2)

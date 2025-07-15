@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+/*
+	Имеется последовательность строк: ("cat", "cat", "dog", "cat", "tree").
+	Создать для неё собственное множество.
+
+	Ожидается: получить набор уникальных слов.
+	Для примера, множество = {"cat", "dog", "tree"}.
+*/
+
 func main() {
 	sl := []string{"cat", "cat", "dog", "cat", "tree"}
 	ans := setsSl(sl)

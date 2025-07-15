@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/*
+Дана переменная типа int64. Разработать программу,
+которая устанавливает i-й бит этого числа в 1 или 0.
+*/
+
 func setBit(val int64, pos int) int64 {
 	return val ^ (1 << int64(pos))
 
@@ -16,6 +21,8 @@ func setBit(val int64, pos int) int64 {
 	n: 1
 
 	num = 11 | 1011
+                 ^
+	1 бит был изменен с 0 на 1
 */
 
 func main() {
